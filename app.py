@@ -34,7 +34,7 @@ class InferlessPythonModel:
     
     def infer(self, inputs):
         print("inputs[prompt] -->", inputs["prompt"], flush=True)
-        prompts = inputs[prompt]
+        prompts = inputs["prompt"]
         print("Prompts -->", prompts, flush=True)
         sampling_params = SamplingParams(
             temperature=0.5,
