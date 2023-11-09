@@ -17,13 +17,13 @@ from huggingface_hub import snapshot_download
 class InferlessPythonModel:
     def initialize(self):
         snapshot_download(
-            "TheBloke/CodeLlama-34B-Python-GPTQ",
+            "TheBloke/CodeLlama-34B-Python-AWQ",
             local_dir="/model",
             token="<<your_token>>",
         )
         self.llm = LLM(
             model="/model",
-            quantization="gptq",
+            quantization="awq",
             # tensor_parallel_size=args.tensor_parallel_size,
             # max_num_seqs=args.batch_size,
             # max_num_batched_tokens=args.batch_size * args.input_len,
