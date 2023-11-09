@@ -1,9 +1,11 @@
 build:
-  cuda_version: "12.3"
+  cuda_version: "12.1.1"
   system_packages:
     - "libssl-dev"
   python_packages:
     - "torch==2.0.1"
     - "vllm==0.2.1.post1"
-    - "git+https://github.com/huggingface/transformers.git@main"    
+    - "transformers"
     - "accelerate"
+    - "safetensors"
+    
