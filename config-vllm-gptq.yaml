@@ -1,8 +1,9 @@
 build:
-  cuda_version: "12.3"
+  cuda_version: "11.8.0"
   system_packages:
     - "libssl-dev"
   python_packages:
-    - "git+https://github.com/huggingface/transformers.git@main"
-    - "git+https://github.com/chu-tianxiang/vllm-gptq.git@gptq_hf"
+    - "torch==2.0.1"
+    - "vllm==0.2.0"
+    - "git+https://github.com/huggingface/transformers.git@main"    
     - "accelerate"
