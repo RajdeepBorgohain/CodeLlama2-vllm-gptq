@@ -4,7 +4,7 @@ build:
     - "libssl-dev"
   python_packages:
     - "torch==2.0.1"
-    - "git+https://github.com/chu-tianxiang/vllm-gptq.git@gptq_hf"
+    - "vllm"
     - "transformers"
     - "accelerate"
     - "safetensors"
